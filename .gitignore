@@ -1,0 +1,29 @@
+# Ignore everything
+     *
+# But EXCLUDE...
+# ...all hidden files (files starting with a dot)
+         !\.*
+# ...and all .sh files
+#    !*.sh
+# Make sure any FOLDERS beginning with a dot ARE ignored.
+             \.**/
+
+# ADVANCED WHITE- AND BLACK-LISTING
+# You shouldn't NEED ANY of the below, but just in case...
+
+# INCLUSIONARY OVERRIDES ==================================
+# Add additional exclusions (files and folders you want INCLUDED in the
+#  backup) here, ensuring each line is PREFACED WITH A ! (Exclamation point)
+# !some-file-to-keep
+# !some/folder/to/keep/
+!\.tmux/
+
+# EXCLUSIONARY OVERRIDES ("FORCE" IGNORE) ==================
+# Add folder patterns you want ignored (omitted from the backup) here:
+# my/folder/
+# .some/dot/folder/
+
+# Add file patterns you want ignored (omitted from the backup) here:
+# .some-dot-file
+# some-other-file
+
